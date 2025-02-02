@@ -1,41 +1,36 @@
-项目名：《信用环境测度与区域经济增长：基于四个维度的实证分析》
-日期：2025年1月24日
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-文件描述：
-本文件夹包含四个python源文件，它们的文件名和对应的功能是：
-
-1. “数据清洗.py”：读取excel表中的数据并补足缺失值
-2. “作图.py”：绘制区域信用环境与区域人均GDP的散点图和折线图
-3. “回归分析.py”：进行回归分析并将回归结果导出到Excel表格
-4. “稳健性检验.py”：对城市信用环境排序结果进行Friedman检验和Nemenyi检验
+Project Name: Measuring Credit Environment and Regional Economic Growth: An Empirical Analysis Based on Four Dimensions
+Date: January 24, 2025
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-运行说明：
+File Description
 
-1. 运行上述python源文件前，请分别将源文件中的'路径'字样替换为'复现代码'文件夹所处的文件路径，随后运行
-相应文件。
-2. 在代码第29行可设置信用测度方式。可选项有'专家'，'主成分'，和'等权'，分别对应专家赋权法、主成分分析法、
-等权法。
-3. 清洗后的数据储存在'路径/Data/Output/merged_data.xls'文件中。
-3. 散点图和折线图存储在'路径/Results/figures'路径中。
-4. 回归结果以Excel表格形式存储在'路径/Results/regression_results'路径中。
+This folder contains two Python source files, each serving the following functions:
+1. 'clean_data.py' – Reads data from an Excel file and fills in missing values.
+2. 'robustness_check.py' – Performs Friedman and Nemenyi tests on the ranking results of urban credit environments.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-结果说明：
+Instructions for Running the Code
 
-'专家_regression_results.xls'的四个工作表分别对应了论文中的四个回归结果表格。
-1. 'Sheet1'对应表2的回归结果。
-2. 'Sheet2'对应表4的回归结果。
-3. 'Sheet3'对应表5的回归结果。
-4. 'Sheet4'对应表3的回归结果。
+Before running the Python scripts mentioned above, in line 26 replace the placeholder "your_dirname" in the source files with the actual file path where the "credit2025" folder is located. Then, execute the corresponding script.
 
-'专家_robustness_check.xls'的两个工作表分别对应了论文中的两个稳健性检验结果。
-1. 'Friedman test'对应表6的Friedman检验结果。
-2. 'Nemenyi test'对应表7的Nemenyi检验结果。
+The credit environment measure can be set in line 31. Available options are:
+1. 'expert' – Expert weighting method
+2. 'principal_component' – Principal component analysis (PCA)
+3. 'equal_weight' – Equal-weight method
+
+The cleaned data is stored in: 'your_dirname/Data/Output/merged_data.xls'
+Results of robustness check are stored as Excel files in: 'your_dirname/Results/regression_results'
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Explanation 
+
+The file 'expert_robustness_check.xls' contains two worksheets corresponding to the robustness check results in the paper:
+
+Friedman test – Results from Table 6 (Friedman test)
+Nemenyi test – Results from Table 7 (Nemenyi test)
 
 
 
